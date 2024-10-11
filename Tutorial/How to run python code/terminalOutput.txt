@@ -1,0 +1,49 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ python ./hello.py
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ python3 ./hello.py
+Hello, World!
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ python3 hello.py > output.txt
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ ls
+hello.py  output.txt
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ cat output.txt
+Hello, World!
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ python3 hello.py >> output.txt
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ ./hello.py
+bash: ./hello.py: Permission denied
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ chmod +x hello.py
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ ls -l
+total 8
+-rwxrwxr-x 1 shtlp_0147 shtlp_0147 34 Oct 11 14:53 hello.py
+-rw-rw-r-- 1 shtlp_0147 shtlp_0147 28 Oct 11 15:43 output.txt
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ ./hello.py
+./hello.py: line 2: syntax error near unexpected token `"Hello, World!"'
+./hello.py: line 2: `print("Hello, World!")'
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ nano hello.py
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ ./hello.py
+Hello, World!
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ python -m hello
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ python3 -m hello
+Hello, World!
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/How to run python code$ python3
+Python 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import hello
+Hello, World!
+>>> import importlib
+>>> importlib.import_module("hello")
+<module 'hello' from '/home/shtlp_0147/practice_python/Tutorial/How to run python code/hello.py'>
+>>> importlib.import_module('hello')
+<module 'hello' from '/home/shtlp_0147/practice_python/Tutorial/How to run python code/hello.py'>
+>>> importlib.reload(hello)
+Hello, World!
+<module 'hello' from '/home/shtlp_0147/practice_python/Tutorial/How to run python code/hello.py'>
+>>> with open("hello.py") as hello:
+...     exec(hello.read())
+... 
+Hello, World!
+>>> 
