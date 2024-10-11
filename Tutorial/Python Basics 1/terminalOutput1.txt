@@ -1,0 +1,106 @@
+Script started on 2024-10-11 17:57:23+05:30 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="73" LINES="15"]
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ [7mhttps://[27m[7mw[27m[7mww.w3schools.com/python/python_datatypes.asp[27m[A]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ https://w[1Pww.w3schools.com/python/python_datatypes.as[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Ktouch da tatypes.t[Kpu[Ky
+[?2004l[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ [K]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python [K2[K3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lHello World
+<class 'str'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lHello World
+<class 'str'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l20
+<class 'int'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l20.5
+<class 'float'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l1j
+<class 'complex'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l['apple', 'banana', 'cherry']
+<class 'list'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ [7mx = "Hello World"[27m
+
+[7m# #display x:[27m
+[7m# print(x)[27m
+
+[7m# #display the data type of x:[27m
+[7m# print(type(x))[27m[A[A[A[A[A[A]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ x = "Hello World"
+
+# #display x:
+# print(x)
+
+# #display the data type of x:
+[1P# print(type(x)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l('apple', 'banana', 'cherry')
+<class 'tuple'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l('apple', 'banana', 'cherry')
+<class 'tuple'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lrange(0, 6)
+<class 'range'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l{'name': 'John', 'age': 36}
+<class 'dict'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l{'apple', 'banana', 'cherry'}
+<class 'set'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lfrozenset({'apple', 'cherry', 'banana'})
+<class 'frozenset'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lTrue
+<class 'bool'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ [7mx = "Hello World"[27m
+
+[7m# #display x:[27m
+[7m# print(x)[27m
+
+[7m# #display the data type of x:[27m
+[7m# print(type(x))[27m[A[A[A[A[A[A]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ x = "Hello World"
+
+# #display x:
+# print(x)
+
+# #display the data type of x:
+[1P# print(type(x)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Ptouch
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lb'Hello'
+<class 'bytes'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ [7mx = "Hello World"[27m
+
+[7m# #display x:[27m
+[7m# print(x)[27m
+
+[7m# #display the data type of x:[27m
+[7m# print(type(x))[27m[A[A[A[A[A[A]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ x = "Hello World"
+
+# #display x:
+# print(x)
+
+# #display the data type of x:
+[1P# print(type(x)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Ptouch
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lbytearray(b'\x00\x00\x00\x00\x00')
+<class 'bytearray'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ python3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004l<memory at 0x7f1cd34459c0>
+<class 'memoryview'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ [7mx = "Hello World"[27m
+
+[7m# #display x:[27m
+[7m# print(x)[27m
+
+[7m# #display the data type of x:[27m
+[7m# print(type(x))[27m[A[A[A[A[A[A]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ x = "Hello World"
+
+# #display x:
+# print(x)
+
+# #display the data type of x:
+[1P# print(type(x)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython3 datatypes.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ky
+[?2004lNone
+<class 'NoneType'>
+[?2004h]0;shtlp_0147@SHTLP0147: ~/practice_python/Tutorial/Python Basics 1[01;32mshtlp_0147@SHTLP0147[00m:[01;34m~/practice_python/Tutorial/Python Basics 1[00m$ git push orig
