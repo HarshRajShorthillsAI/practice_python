@@ -1,0 +1,9 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Operator precedence$ python3 opPrecedence.py 
+3. 10 + 20 * 30 =  610
+8. Hello! Welcome Alex
+13. Good bye!!
+18.  100.0
+20.  6
+22.  0
+24.  512
+28.  90.0
