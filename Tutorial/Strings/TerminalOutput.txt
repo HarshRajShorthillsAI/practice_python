@@ -1,0 +1,28 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Strings$ python3 strings.py
+P
+n
+Pyth
+Pto
+Hello  +  World  =  Hello World
+HaHaHa
+True
+True
+6
+HELLO
+hello
+Python
+Hello World
+hello
+hello  
+  hello
+7
+Java programming
+['apple', 'banana', 'cherry']
+apple, banana, cherry
+My name is Alice and I am 25 years old
+My name is Alice and I am 25 years old
+My name is Alice and I am 25 years old
+This is a
+
+multiline       string that spans'
+multiple"\ lines.
