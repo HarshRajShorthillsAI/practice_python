@@ -1,0 +1,14 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/List Methods$ python3 listMethods.py 
+my_list:  [1, 2, 3, 4]
+my_list:  [1, 2, 3, 4, 5]
+my_list:  [1, 2, 3, 4]
+my_list:  [1, 3, 2, 4]
+element:  2
+my_list:  [1, 3]
+my_list:  []
+index:  1
+count:  2
+my_list:  [1, 2, 3]
+my_list:  [3, 2, 1]
+copy_list:  [1, 2, 3]
+squares:  [0, 1, 4, 9, 16]
