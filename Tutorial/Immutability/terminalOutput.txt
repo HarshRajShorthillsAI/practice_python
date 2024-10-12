@@ -1,0 +1,11 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Immutability$ python3 immutability.py 
+text id:  140101191280112
+text id:  140101191280048
+error
+id(a) =  140101192450416
+id(a) =  140101192450448
+id(x) =  140101191015344
+id(x) =  140101191015440
+id(flag) =  94734226408480
+id(flag) =  94734226408448
+error

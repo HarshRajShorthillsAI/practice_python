@@ -1,0 +1,14 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Escape Sequence$ python3 escapeSequence.py 
+Hello, 
+World!
+Name:   John
+This is a backslash: \
+It's a sunny day.
+She said, "Hello!"
+Hillo World!
+Hello
+     World!
+A
+A
+Ω
+raw_string:  C:\Users\Name\Documents
