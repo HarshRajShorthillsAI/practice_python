@@ -1,0 +1,9 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/List Slicing$ python3 listSlicing.py 
+[1, 2, 3]
+[0, 1, 2]
+[2, 3, 4, 5]
+[0, 2, 4]
+[2, 3, 4]
+[5, 4, 3, 2, 1, 0]
+[2, 3, 4, 5]
+[0, 1, 2, 3, 4, 5]
