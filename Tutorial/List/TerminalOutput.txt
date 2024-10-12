@@ -1,0 +1,16 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/List$ python3 list.py
+apple
+cherry
+['banana', 'cherry']
+['apple', 'cherry']
+['apple', 'orange', 'cherry']
+['apple', 'orange', 'cherry', 'grape']
+['apple', 'cherry', 'grape']
+['apple', 'cherry', 'grape', 'mango']
+['apple', 'pear', 'cherry', 'grape', 'mango']
+['apple', 'cherry', 'grape', 'mango']
+['apple', 'cherry', 'grape']
+[1, 2, 3, 4]
+[0, 1, 4, 9, 16]
+True
+6
