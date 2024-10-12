@@ -1,0 +1,7 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Type Conversion$ python3 typeConversion.py 
+x + y = 13.5
+<class 'float'>
+num_str =  100
+num_int =  10
+50
+Invalid conversion!
