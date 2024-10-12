@@ -1,4 +1,12 @@
 shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Augmented Operator$ python3 augmentedOpr.py
+8
+14
+8
+1
+2
+5
+6
+7
 x =  3.0
 x =  3
 x =  20
