@@ -1,0 +1,8 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Formatting value$ python3 formattingStrings.py
+My name is Alice and I am 30 years old.
+My name is Bob and I am 25 years old. Bob is my nickname.
+My name is Charlie and I am 40 years old.
+My name is Eve and I am 22 years old.
+The sum of 5 and 10 is 15.
+Value of Pi: 3.14
+Value of Pi: 3.14
