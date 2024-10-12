@@ -1,0 +1,5 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Expression$ python3 expression.py
+is_valid True
+name:  Alice greeting:  Hello, Alice repeat:  hahaha
+result 25
+11
