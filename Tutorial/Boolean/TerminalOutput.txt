@@ -1,0 +1,11 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Boolean$ python3 boolean.py
+2
+1
+True
+False
+False
+True
+False
+Falsy value
+False
+True
