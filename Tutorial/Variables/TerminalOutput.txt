@@ -4,3 +4,10 @@ shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Variables$ python3 variables.py
 John
 <class 'str'>
 Sally
+1 2 Three
+10
+3
+Traceback (most recent call last):
+  File "/home/shtlp_0147/practice_python/Tutorial/Variables/variables.py", line 28, in <module>
+    print(x)
+NameError: name 'x' is not defined
