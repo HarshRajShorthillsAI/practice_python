@@ -1,0 +1,9 @@
+shtlp_0147@SHTLP0147:~/practice_python$ cd Tutorial/
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial$ cd Numbers/
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Numbers$ python3 numbers.py
+<class 'float'>
+<class 'float'>
+<class 'float'>
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Numbers$ python3 numbers.py
+7
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Numbers$

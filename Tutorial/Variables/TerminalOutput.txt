@@ -1,0 +1,6 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Variables$ python3 variables.py
+5
+<class 'int'>
+John
+<class 'str'>
+Sally
