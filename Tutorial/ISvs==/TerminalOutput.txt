@@ -1,0 +1,6 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/ISvs==$ python3 isvsequal.py 
+True
+False
+x is None
+True
+True
