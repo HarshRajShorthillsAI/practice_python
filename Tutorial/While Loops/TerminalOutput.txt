@@ -1,0 +1,29 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/While Loops$ python3 whileLoop.py 
+1
+2
+3
+4
+5
+1
+2
+1
+2
+4
+5
+1
+2
+3
+Loop ended
+Enter 'q' to quit: q
+1. Start Game
+2. Options
+Type 'exit' to quit.
+Choose an option: 1
+1. Start Game
+2. Options
+Type 'exit' to quit.
+Choose an option: 2
+1. Start Game
+2. Options
+Type 'exit' to quit.
+Choose an option: exit
