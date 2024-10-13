@@ -1,0 +1,10 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/List Packing and Unpacking$ python3 l
+istpackunpack.py 
+1 2 3
+1
+[2, 3, 4]
+5
+(1, 2, 3, 4)
+20 10
+1 2 3 4
+1 [2, 3, 4] 5
