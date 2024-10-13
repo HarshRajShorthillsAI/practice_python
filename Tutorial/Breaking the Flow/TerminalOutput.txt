@@ -1,0 +1,17 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Breaking the Flow$ python3 breakingflow.py 
+0
+1
+2
+0
+1
+2
+4
+0
+1
+2
+3
+4
+0
+1
+2
+Even
