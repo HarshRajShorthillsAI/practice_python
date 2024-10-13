@@ -1,0 +1,7 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Scope Rules$ python3 scoperules.py 
+Inner x: local
+Outer x: enclosing
+Global x: global
+Count after increment: 1
+Inner x: modified
+Outer x: modified
