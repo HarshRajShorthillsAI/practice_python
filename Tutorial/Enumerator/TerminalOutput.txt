@@ -1,0 +1,14 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Enumerator$ python3 enumerator.py
+0 apple
+1 banana
+2 cherry
+1 apple
+2 banana
+3 cherry
+0 h
+1 e
+2 l
+3 l
+4 o
+((0, 'a'), (1, 'b'), (2, 'c'))
+'cherry' found at index 2
