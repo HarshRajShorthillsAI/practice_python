@@ -1,0 +1,16 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Operations on Dictionary$ python3 operationDictionary.py 
+{}
+{'name': 'Alice', 'age': 25}
+Alice
+Not found
+dict_items([('name', 'Alice'), ('age', 25)])
+dict_keys(['name', 'age'])
+dict_values(['Alice', 25])
+25
+{'name': 'Alice'}
+('age', 25)
+{'name': 'Alice'}
+30
+{'name': 'Alice', 'age': 30}
+{'name': 'Alice', 'age': 26, 'city': 'New York'}
+{'name': 'Unknown', 'age': 'Unknown', 'city': 'Unknown'}
