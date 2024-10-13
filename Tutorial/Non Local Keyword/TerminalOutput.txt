@@ -1,0 +1,2 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Non Local Keyword$ python3 nonlocal.py 
+Count after inner function: 1
