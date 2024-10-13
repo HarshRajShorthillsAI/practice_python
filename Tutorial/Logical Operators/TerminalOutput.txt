@@ -1,0 +1,10 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Logical Operators$ python3 logicalOps.py 
+False
+False
+True
+True
+False
+x is 10
+True
+False
+Both conditions are True
