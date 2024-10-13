@@ -1,0 +1,7 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Deault and Keyword Arguments$ python3 defaultAndKeywordArgs.py 
+Hello, Guest!
+Hello, Alice!
+Pet Name: Buddy
+Pet Type: Dog
+Pet Name: Whiskers
+Pet Type: Cat
