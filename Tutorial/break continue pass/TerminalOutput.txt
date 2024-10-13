@@ -1,0 +1,17 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/break continue pass$ python3 breakContinuePass.py 
+0
+1
+2
+3
+4
+Found 5, exiting loop
+0
+1
+Skipping 2
+3
+4
+0
+1
+2
+3
+4
