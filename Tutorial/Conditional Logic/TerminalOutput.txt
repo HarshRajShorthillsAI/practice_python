@@ -1,0 +1,9 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Conditional Logic$ python3 conditionalLogic.py 
+x is greater than 5
+x is equal to 10
+x is 5 or less
+x is greater than 5
+x is also greater than 8
+Positive
+Both conditions are True
+At least one condition is True
