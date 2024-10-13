@@ -1,0 +1,7 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Argument Specification$ python3 argsKwargs.py 
+15
+name: Alice
+age: 30
+city: New York
+Positional arguments: (1, 2, 3)
+Keyword arguments: {'name': 'Alice', 'age': 30}
