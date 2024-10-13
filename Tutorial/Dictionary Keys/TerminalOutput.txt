@@ -1,0 +1,17 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Dictionaries$ cd ../Dictionary\ Keys
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Dictionary Keys$ python3 dictionaryKeys.py 
+{1: 'first', 2: 'two'}
+{'name': 'Alice', 42: 'Answer to life', (1, 2): 'tuple as key'}
+error
+Alice
+None
+Not Found
+{'name': 'John', 'age': 30}
+{1: 'one', 2: 'two'}
+{(0, 0): 'origin', (1, 2): 'point'}
+a 1
+b 2
+c 3
+True
+False
+name Alice
