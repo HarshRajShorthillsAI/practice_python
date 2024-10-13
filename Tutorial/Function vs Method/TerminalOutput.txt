@@ -1,0 +1,8 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Function vs Method$ python3 functionvsMethod.py 
+8
+(9, 20)
+9
+20
+Hello, World!
+None
+None
