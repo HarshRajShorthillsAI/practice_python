@@ -1,0 +1,8 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/ParametersAndArguments$ python3 paramtersArguments.py 
+8
+Hello, Guest!
+Hello, Alice!
+10
+Pet Name: Buddy
+species: Dog
+age: 5
