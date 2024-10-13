@@ -1,0 +1,3 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Global Keyword$ python3 global.py 
+Count after increment: 1
+Hello, World!
