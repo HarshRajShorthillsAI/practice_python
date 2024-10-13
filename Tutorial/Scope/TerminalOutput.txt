@@ -1,0 +1,5 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Scope$ python3 scope.py 
+Inside function: 10
+Inside inner function: 20
+Inside function, modified global z: 40
+Global z after modification: 40
