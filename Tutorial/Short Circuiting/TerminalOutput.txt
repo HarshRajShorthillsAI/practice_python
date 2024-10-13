@@ -1,0 +1,7 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Short Circuiting$ python3 shortCircuiting.py 
+0
+1
+False
+False
+False
+True
