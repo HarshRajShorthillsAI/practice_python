@@ -1,0 +1,16 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Truthy and Flasy$ python3 truefalse.py 
+2
+1
+0
+x is greater than 5
+False
+True
+False
+An empty list is treated as False.
+A non-empty list is treated as True.
+True
+False
+False
+True
+False
+True
