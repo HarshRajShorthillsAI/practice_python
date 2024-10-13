@@ -1,0 +1,7 @@
+Hello, Alice!
+Hello, Guest!
+8
+10
+Pet Name: Buddy
+species: Dog
+age: 5
