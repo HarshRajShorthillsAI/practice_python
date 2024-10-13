@@ -1,0 +1,3 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Ternary Operator$ python3 ternaryOperator.py 
+Adult
+Positive
