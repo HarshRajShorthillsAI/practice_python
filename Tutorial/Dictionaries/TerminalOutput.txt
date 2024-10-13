@@ -1,0 +1,12 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/Dictionaries$ python3 dictionaires.py 
+Alice
+25
+city: Boston
+profession: Engineer
+email: alice@example.com
+{1: 'one', 2: 'second two'}
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+John
+name John
+grade A+
+major Computer Science
