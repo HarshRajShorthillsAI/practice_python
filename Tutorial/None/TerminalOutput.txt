@@ -1,0 +1,9 @@
+shtlp_0147@SHTLP0147:~/practice_python/Tutorial/None$ python3 none.py 
+None
+True
+None
+Hello, Guest!
+Hello, Alice!
+x is None or False
+False
+True
