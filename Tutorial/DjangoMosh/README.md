@@ -1,4 +1,4 @@
-# Django Tutorial
+# Django Tutorial Fundamentals
 ## Pre-Requisites
 - Python (basics, classes, inheritence)
 - Relational Databases (Tables, columns, keys, relationships)
@@ -44,9 +44,9 @@
 
 ## Setting up development environment
 - Update python to latest version
-- pip3 install pipenv
-- pipenv install Django
-- pipenv shell will launch subshell in virtual environment
+- `pip3 install pipenv`
+- `pipenv install Django`
+- `pipenv shell` will launch subshell in virtual environment
 - django-admin is a tool that comes with django and it creates a django project `django-admin startproject eCommerceApp .` in the current working directory.
 - django-admin startproject will start the project straightaway so, we have to run `python manage.py runserver PORT_NUMBER, will attach PORT_NUMBER 8000 if not provided.
 
@@ -79,3 +79,61 @@
     - add 'django.middleware.clickjacking.XFrameOptionsMiddleware' to `MIDDLEWARE`
     - add `INTERNAL_IPS = ['127.0.0.1',]` to settings.py
     
+# models
+
+# sections
+- Introduction to data modeling
+- Building an e-commerce data model
+- Organizing models in apps
+- Coding model classes
+
+## Building an e-commerce data model
+- Suppose we have two entities `Product` and `Cart` and `Cart` has an attribute `created_at` and they have many-to-many relationship.
+- The relationship determines for a product which cart(s) it belongs to.
+- To determine the quantity of a product, we can create an *association class* `CartItem` which will contain attribute `quantity`.
+- It can also be represented by a by separate relationship between:
+    - `Cart` and `CartItem` with one-to-many relationship. there can be many cartitem present in one cart.
+    - `Product` and `CartItem` with one-to-many relationship. A product can be present in many cartItems.
+- If we have entities like `Product`, `Customer`, `OrderItem` and `Order`
+    - `Product` and `OrderItem` can have one-to-many relationship where one product can be available in many orderItem
+    - `Customer` and `Order` can have one-to-many relationship where one customer can place many orders but any order can have only one customer
+    - `Order` placed can have many `product` and `product` can be placed in many `order` so,
+        - we can have `OrderItem` entity which has many-to-one relationship with `Order` ie. many order items can be present in one order but any orderitem can be present in one order.
+        - we can have `OrderItem` entity which has many-to-one relationship with `Product` entity ie. a product can be present in many orderitems but an order item can be only one product.
+- We can add all the functionality to a single app but it will lead to a single monolith which is difficult to understand, maintain and scale as the project complexity increases.
+    - We can decouple the project into apps containing respective specific functionalities like `orders`, `cart`, `cartitem`, `product` but there is a lot of coupling in these apps as any change in any one of them will lead to breaking of other dependent apps.
+- A good model design is the one with minimal coupling and high cohesion/high focus.
+- For entity `Order` we can have attributes `placed_at` and `order_status` where, `order_status` can be set with datatypes as distinct choices `COMPLETED`, `PENDING` and `FAILED` as array of tuples in choices argument of charfield datatype.
+```python
+class Order(models.Model):
+    STATUS_PENDING = 'P'
+    STATUS_COMPLETE = 'C'
+    STATUS_FAILED = 'F'
+
+    ORDER_STATUS = [
+        (STATUS_PENDING, 'P'),
+        (STATUS_COMPLETE, 'C'),
+        (STATUS_FAILED, 'F')
+    ]
+
+    placed_at = models.DateTimeField(auto_add_now=True)
+    payment_status = models.CharField(max_length=1, choices=ORDER_STATUS, default=STATUS_PENDING)
+```
+- For entity `Address` we can have attributes `street`, `city` and `customer`. Here, we will need to implement one-to-one relationship between `Customer` and `Address` entities
+    - For the above, we can set attributes `street`, `city` and `customer` with `OneToOneField`
+    ```python
+    class Address(models.Model):
+        street = models.CharField(max_length=255)
+        city = models.CharField(max_length=255)
+        customer = models.OneToOneField(Customer, on_delete=models.CASCADE, primary_key=True) # models.DEFAULT, models.PROTECT, models.SET_NULL
+    ```
+    - we need to set `primary_key` attribute to `True` for `customer`, if not done, django will create a separate `id` field for each `Address` instance which will result in one-to-many relationship.
+
+- If we needed to set one-to-many relationship between entities `Customer` and `Address` all we have to do is to remove the `primary_key` argument from Foriegn key.
+    - We can add `on_delete` argument to `models.PROTECT` in order to prevernt accidental deletion of instances from entities on which multiple instance of other entity are related.
+
+- For many-to-many relationship between `promotions` and `Products`, we need to set `ManyToManyField` field type for `promotions` field in `Product` entity.
+
+## database setup
+- MySQL, Postgres and SQLite are used most ofter for database needs with Django.
+- 
