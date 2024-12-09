@@ -81,12 +81,6 @@
     
 # models
 
-# sections
-- Introduction to data modeling
-- Building an e-commerce data model
-- Organizing models in apps
-- Coding model classes
-
 ## Building an e-commerce data model
 - Suppose we have two entities `Product` and `Cart` and `Cart` has an attribute `created_at` and they have many-to-many relationship.
 - The relationship determines for a product which cart(s) it belongs to.
@@ -134,6 +128,125 @@ class Order(models.Model):
 
 - For many-to-many relationship between `promotions` and `Products`, we need to set `ManyToManyField` field type for `promotions` field in `Product` entity.
 
-## database setup
+## database operations
 - MySQL, Postgres and SQLite are used most ofter for database needs with Django.
-- 
+- we can create migration files that create python scripts called migrations that defines the models created by us using `python3 manage.py makemigrations`
+- newer migration files are dependent on its immediate previous migration usually. so any changes in one migration filename should be done considering any migrations created later are dependent on in. if it is then modify the migration name in dependency list of dependent migration file.
+- we can use command `python3 manage.py migrate` to run migrations that will create the tables in `db.sqlite3` file.
+- we can use command `python3 manage.py sqlmigrate store 0003` to see what sql code is being sent to sqlite at runtime.
+- we can add `Meta` subclass in any model class which can help us in:
+    - setup table name
+    - setup index on table attributes
+- we can selectively undo migrations done previously, then we have to create a new migration.
+- If we want to completely revert previous migration, we can run following command
+```python
+python3 manage.py migrate store 0003 #0003 is the index of the target migration
+```
+- also we can use version control(git) to revert the changes in code for which migrations were made to revert.
+- also delete the migration file that was reverted.
+- we can create a custom migration file with the command `python3 manage.py makemigrations <appname> --empty`
+- we can open newly created file, in operations list we can write
+```python
+operations = [
+    migrations.RunSQL("""
+    INSERT INTO store_collection (title)
+    VALUES ('collection1')
+    """, """
+    DELETE FROM store_collection
+    WHERE title='collection1'
+    """)
+]
+```
+- after this we can apply custom migration to DB after which we can see that the record is inserted into the table.
+- when we revert the changes from custom migration we will see that the record inserted into the db in the `collection` table will be removed as it was instructed in the second command in operations list.
+- thus the second command in operations list is for commands to be executed if the revert of migrations is called.
+- we can use [MOCKAROO](https://mockaroo.com/) to populate data in tables in database. 
+    - we have to add field names with respective datatypes and number of rows.
+    - set format to sql and download the sql file.
+    - in sql workbench we have to run this sql file to insert all the rows in table.
+
+## orm (object relational mapper)
+- It maps objects to relational records and saves a lot of redundant work.
+- orm translate our python like code for creating models to sql code
+- It is not reliable for complex sql queries.
+- Model and migrations are part of orms
+
+## Managers and querset
+- Manager is like an interface to the database that helps us talk to the database. It is returned by calling `Product.objects`
+- following are some of the operations possible with Managers here
+    - `Product.objects.all()`: pulls out all the data from the table.
+    - `Product.objects.get()`: gets a single object from the table.
+    - `Product.object.filter()`: filters data from the table.
+- all the above commands if run will return a query_set object instead of list of objects.
+- this `query_set` returned from `Product.object.all()` will be basically commands to retrieve all the data which retrieves data when this query_set is iterated over or converted to list or individual element is accessed from it.(Lazy)
+- to retrive a specific object from table we can use `Product.object.get(id=1)` where lookup parameter is `id`
+- lookup parameter here can be set `pk`, which translate to pick up primary key attribute.
+- `get` method throws error `doesnotexist` if the attribute value is not present, this can be caught with `ObjectDoesNotExist` exception.
+- `filter` method returns query_set with which we can append `first()` to determine if the query_set is empty. If it is it will return `None` instead of exception.
+- we can also retrieve a boolean object by appending `exists()`instead, this will tell if the query_set is empty.
+- If we want to retrieve all the products that have price greater than `x` we can use `queryset = Product.objects.filter(unit_price__gt=20)`
+- we can use another lookup like `__range=(20, 30)` to get all the products with `unit_price` in range 20 to 30.
+- we can use something like this too `Product.objects.filter(collection__id__range=(1, 2, 3))` which retrieves all the products having collection id range 1, 2, 3
+- if we want to find all the products with title that contains 'coffee': `Product.objects.filter(title__icontains='coffee')`, note 'i' before contains will make the filter case insensitive.
+- also if we want to filter last updated attribute with certain date we can do that too with: `Product.objects.filter(last_update__date=2021)`
+- we can filter with 'null' value too `Product.objects.filter(description__isnull=True)`
+- we can apply two filters one after the other like: `Product.objects.filter(inventory__lt=10).filter(unit_price__lt=20)`. these two queries are applied with `and` operation.
+- For applying two queries with `or` operations we can use `Q` class as: `Product.objects.filter(Q(inventory__lt=10) | Q(unit_price__lt=20))`
+- similarly to simulate `and` operation with Q class we can just place `&` operator inplace of `|` operator.
+- we can negate a query by putting `~` operator just before the Query(`Q(...)`) in filter.
+- if in some hypothetical requirement we wanted to filter based on inventory=price, we have `F` class for it. we can use `Product.objects.filter(inventory=F('unit_price))` for the same.
+    - We can also compare attributes of related tables like: `Product.objects.filter(inventory=F('collection__id))` where we are filtering if `inventory` from `Product` is equal to `id` from `collection`.
+- we can sort the `Products` table by `title` in ascending order like this: `Product.objects.order_by('title')`.
+- we can sort the `Products` table by `title` in descending order like this: `Product.objects.order_by('-title')`
+- we can sort the `Products` table by multiple attributes like: `Products.objects.order_by('unit_price', '-title')` where sorting happens with `unit_price` in ascending order followed by `title` in descending order (if prices for some are same)
+- `order_by` is a method of `queryset` thus it can be called after applying `filter`.
+- if we have to get the first object of the table sorted by an attribute we can do it like: `Product.objects.earliest('unit_price')` which is same as `Product.objects.order_by('unit_price')[0]`.
+    - for getting the last object of the table sorted by an attribute we will put `latest` in place of `earliest` as: `Product.objects.earliest('unit_price')`
+- we can limit results as following: `Product.objects.all()[:5]` which will print objects in product table on the index `0, 1, 2, 3, 4`
+- we can query related fields like `Product` table has a relation to `collection` table so we can call: `Product.objects.values('id', 'title', 'Collection__title')`. This will do inner join of `Product` and `Collection` tables.
+    - we can also get these values as tuples: `Product.objects.values_list('id', 'title', 'Collection__title')`
+- django creates the foreign key itself for a related table like here: `OrderItem.objects.values('product_id').distinct()`
+- `values` method returns objects from table as a dictionary but `only` method inplace of it return object instances. But this doesnot make much difference. But it should be used properly.
+- To create a join between tables we can use `select_related` method like this: `Product.objects.select_related('collection').all()`. This can be done here since, one `Product` has one `Collection` ie. one-to-one relation.
+    - In case of many-to-many relation we can use `prefetch_related` method like this: `Product.objects.prefetch_related('collection').all()` where onr products can have many promotions.
+- both `select_related` and `prefetch_related` returns queryset.
+- to count number of records in a table is with its primary key: `result = Product.objects.aggregate(count=Count('id))`
+    - to find minimum price in the table: `result = Product.objects.aggregate(min_price=Min('unit_price'))`
+- `queryset = Customer.objects.annotate(is_new=Value(True))` which will assign a new attribute `is_New` to `Customer` table and set it to `True`.
+    - Here we put True but it accepts expression.
+- we can create a new attribute called `full_name` using `first_name` and `last_name` using `Func` method as: `queryset = Customer.objects.annotate(full_name = Func(F('first_name'), Value(' '), F('last_name'), function='CONCAT'))`
+OR
+`queryset = Customer.objects.annotate(full_name = Concat('first_name', Value(' '), 'last_name'))`
+- We can create a custom Manager to retrieve queryset with:
+```python
+class TaggedItemManager(models.Manager):
+    def get_tags_for(self, obj_type, obj_id):
+        content_type = ContentType.objects.get_for_model(obj_type)
+
+        return TaggedItem.objects \
+            .select_related('tag) \
+                .filter(
+                    content_type=content_type,
+                    object_id=obj_id
+                )
+```
+and later it can be called in the `view` script as `TaggedItem.objects.get_tags_for(Product, 1)`
+- queryset caching happens in django but only if in first access the whole of the queryset is processed, then further either some index of it or whole of it is accessed caching will help but if not the caching will not be used at all.
+
+## creating objects
+- we can create a table record with this code:
+```python
+collection = Collection()
+collection.name = 'Video Game'
+collection.featured_product = Product(pk=1)
+collection.save()
+```
+or
+`Collection.objects.create(name='a', featured_product_id=1)`
+ 
+## updating objects
+- To update column(s) of record(s) in the table we can use `update` as: `Collection.objects.filter(id=11).update(featured_product=None)`
+
+## deleting objects
+- To delete object(s) from table we can: `Collection.objects.filter(id__gt=5).delete()`
+- if collection is already in the memory in `collection` we can delete it as `collection.delete()`

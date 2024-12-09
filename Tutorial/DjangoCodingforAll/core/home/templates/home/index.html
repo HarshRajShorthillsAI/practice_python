@@ -1,0 +1,38 @@
+{%extends "home/base.html"%}
+{% block start %}
+    <h1>This is index page</h1>
+    <a href="/about/">
+        about
+    </a>
+    <a href="/contact/">
+        contact
+    </a>
+    <div>
+        <table class="table">
+            <tr>
+                <th>S No.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Promoted</th>
+            </tr>
+            {% for person in people %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{person.name}}</td>
+                <td>{{person.age}}</td>
+                <td {% if person.age < 24 %} style="background-color: red;" {%endif%} td>{% if person.age >= 24 %}
+                        👍
+                    {% else %}
+                        👎
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <p>
+        Truncated text: {{text|truncatechars:10}}
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quibusdam esse nihil est ad itaque, beatae soluta saepe omnis ratione nulla consequatur deleniti labore architecto sit amet natus, repudiandae aspernatur quidem ducimus ea excepturi quae. Ipsam deleniti dolor corrupti. Totam eum quasi tempore cupiditate ex aspernatur ipsam blanditiis illum animi tenetur officia quos sed nesciunt unde earum, cum temporibus dolorum id. Nisi modi, eaque animi commodi, dolorem non omnis iure sed eum quaerat numquam mollitia vero illum, odio rerum dolorum nostrum aut sapiente tenetur. Necessitatibus dignissimos quaerat commodi alias. Maiores alias vitae voluptatum quae laborum! Repudiandae illum quasi saepe dolor?</p>
+{% endblock %}
