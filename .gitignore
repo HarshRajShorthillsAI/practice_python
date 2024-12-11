@@ -1,1 +1,4 @@
-Tutorial/Web Scraping/beautifulSoup/*
+Tutorial/Web\ Scraping/beautifulSoup
+Pipfile
+Pipfile.lock
+Tutorial/DjangoMosh/eCommerceApp/__pycache__
